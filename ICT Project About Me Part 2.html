@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .Image {background-color: #6c757d;
+        border-radius: 25px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        position: fixed;
+        top: 220px;
+        left: 1330px;
+        transition: background-color 0.3s;}
+    .Image:hover {background-color: #0077ff;}
+    .Text {visibility:hidden;
+        opacity: 0;
+        background-color: #0077ff;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        border-radius: 25px;
+        font-family: helvetica;
+        font-weight: 600;
+        color: white;
+        position:absolute;
+        bottom: 55px;
+        right: 20px;
+        transition: visibility 0.6s, opacity 0.6s;}
+    .Image:hover .Text {visibility: visible;
+        opacity: 1}
+    .Img {background-color: #0077ff;
+        border-radius: 25px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        position: fixed;
+        top: 300px;
+        left: 1330px;
+        transition: background-color 0.3s}
+    .Abt {visibility:hidden;
+        opacity: 0;
+        background-color: #0077ff;
+        width: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        border-radius: 25px;
+        font-family: helvetica;
+        font-weight: 600;
+        color: white;
+        position:absolute;
+        bottom: 55px;
+        right: 5px;
+        transition: visibility 0.6s, opacity 0.6s;}
+    .Img:hover .Abt {visibility: visible;
+        opacity: 1}
+    .Png {background-color: #6c757d;
+        border-radius: 25px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        position: fixed;
+        top: 380px;
+        left: 1330px;
+        transition: background-color 0.3s;}
+    .Png:hover {background-color: #0077ff;}
+    .Pt {visibility:hidden;
+        opacity: 0;
+        background-color: #0077ff;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        border-radius: 25px;
+        font-family: helvetica;
+        font-weight: 600;
+        color: white;
+        position:absolute;
+        bottom: 55px;
+        right: 10px;
+        transition: visibility 0.6s, opacity 0.6s;}
+    .Png:hover .Pt {visibility: visible;
+        opacity: 1}
+        .animate {animation-duration: 1s;
+    animation-fill-mode: both;}
+
+    .animate--delay-1s {
+        animation-delay: 1s;
+    }
+    .animate--delay-05s {
+        animation-delay: .5s;
+    }
+    .animate--fast {
+        animation-duration: 0.6s;
+    }
+    .animate--slow {
+        animation-duration: 3s;
+    }
+    @keyframes slideInTop {
+        from {
+            transform: translateY(-300px);
+        }
+        
+        to {
+            transform: translateY(0);
+        }
+    }
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-300px);
+        }
+        
+        to {
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideInTopOpacity {
+        from {
+            transform: translateY(-300px);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes slideInLeftOpacity {
+        from {
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .slideInTop {
+        animation-name: slideInTop;
+        animation-timing-function: ease;
+    }
+    .slideInLeft {
+        animation-name: slideInLeft;
+        animation-timing-function: ease;
+    }
+    .slideInTopOpacity { animation-name: slideInTopOpacity;
+    animation-timing-function: ease;}
+    .slideInLeftOpacity {animation-name: slideInLeftOpacity;
+    animation-timing-function: ease;}
+</style>
+<body bgcolor="#111">
+    <h1 class="animate slideInTopOpacity" style="color: white;font-family: 'Poppins', sans-serif;font-weight: 900;font-size: 50px;position:absolute;left:36.3%; background-color:#1f1f1f;border-radius: 10px; width: 339px; padding-left:3%;border-color: #0077ff;border-width: 2px;border-style: solid;">ABOUT <span style="color: #0077ff;">ME</span></h1>
+    <h1 class="animate slideInLeftOpacity" style="color: white;font-family: 'Poppins', sans-serif;font-weight: 700; font-size: 25px; position:absolute; top: 180px; left: 70px;">PERSONAL INFORMATION</h1>
+    <p class="animate slideInLeftOpacity animate--delay-05s" style="color: #8a959e;font-family: helvetica;font-size: 15px;position:absolute; top: 240px; left: 70px;font-weight: 600;">First Name : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color:white;">Davion Chester</span>
+    <br><br><br>Middle Name : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color: white;">Plaza</span>
+    <br><br><br>Last Name : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color: white;">Ausejo</span>
+    <br><br><br>Age : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color: white;">14 Years Old</span>
+    <br><br><br>Birthdate : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color: white;">June 20, 2009</span> </p>
+    <p class="animate slideInLeftOpacity animate--delay-05s" style="color: #8a959e;font-family: helvetica;font-size: 15px;position:absolute; top: 240px; left: 500px;font-weight: 600;">Favorite Subject : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color:white;">Math</span>
+        <br><br><br>Nationality : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color: white;">Filipino</span>
+        <br><br><br>Adress : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color: white;">Combado, Bacong, Negros Oriental</span>
+        <br><br><br>Zip Code : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color: white;">6216</span>
+        <br><br><br>Languages : <span class="animate slideInLeftOpacity animate--delay-1s animate--slow" style="color: white;">Bisaya, Filpino, English</span> </p>
+    </div>
+        <div class="Image"><a href="index.html"><img src="home.png" height="20px" width="20px"></a>
+            <span class="Text">Home</span>
+          </div>
+          <div class="Img"><a href="ICT Project About Me Part 2.html"><img src="User.png" height="20px" width="20px"></a>
+            <span class="Abt">About Me</span>
+          </div>
+          <div class="Png"><a href="ICT Project About Me Part 3.html"><img src="Portfolio.png" height="20px" width="20px"></a>
+            <span class="Pt">Portfolio</span>
+          </div>
+    <img class="animate slideInTopOpacity" src="RTPM.JPG" height="308" width="400" style="position: absolute; top: 200px; left: 870px; border-radius: 25px; border-style: solid; border-color:#0077ff; border-width: 2px;">
+    <p class="animate slideInTopOpacity" style="color: white;font-family: 'Poppins', sans-serif;font-weight: 900;font-size: 20px; position:absolute; top: 140px; left: 1000px;background-color:#1f1f1f;padding-left: 10px;padding-right:10px;border-radius: 10px;border-color:#0077ff;border-style: solid;border-width: 2px;">RTPM DSHS</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr color="#8a959e" style="width:70%">
+    <div class="animate slideInLeftOpacity">
+    <p style="color: white;font-family: 'Poppins', sans-serif;font-weight: 900;font-size: 20px;background-color:#1f1f1f;width:200px;text-align:center;position:relative;left:41.8%;padding-left: 10px;padding-right:10px;border-radius: 10px;border-color:#0077ff;border-style: solid;border-width: 2px;">8 - MENDEL</p>
+    <img src="Mendel.jpg" width="500" height="350" style="display: block;margin-left: auto;margin-right: auto;border-radius: 25px;border-color: #0077ff;border-style: solid;border-width: 2px;">
+    </div>
+    <br>
+    <p class="animate slideInLeftOpacity animate--delay-05s" style="color: white;font-family: helvetica;font-size: 15px; text-align: center">This is my classroom, 8 - Mendel. This classroom is full of joy and laughter (also the home of <span style="font-weight:600;color:goldenrod">S</span><span style="font-weight:600;color:#0077ff">P</span><span style="font-weight:600;color:darkmagenta">G</span>), come on and have a visit!</p>
+</body>
+</html>
